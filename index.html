@@ -11,31 +11,11 @@
     <main>
         <div class="todo">
             <div class="addTodo shadow">
-                <input type="text" placeholder="Task to be done">
-                <button class="mybtn">Add</button>
+                <input type="text" placeholder="Task to be done" id="inputTodo">
+                <button class="mybtn" onclick="addTodo()">Add</button>
             </div>
-            <div class="todoList shadow">
-                <div class="mydiv">
-                    <h3>Prepare the monthly report</h3>
-                    <button class="deletebtn"> <i class="fa-regular fa-trash-can"></i></button>                    
-                </div>
-                <hr>
-                <div class="mydiv">
-                    <h3>Lunch with Zack</h3>
-                    <button class="deletebtn"> <i class="fa-regular fa-trash-can"></i></button>                    
-                </div>
-                <hr>
-                <div class="mydiv">
-                    <h3 style="text-decoration: line-through;">Buy gift cards</h3>
-                    <button class="deletebtn"> <i class="fa-regular fa-trash-can"></i></button>                    
-                </div>
-                <hr>
-                <div class="mydiv">
-                    <h3>Get Groceries</h3>
-                    <button class="deletebtn"> <i class="fa-regular fa-trash-can"></i></button>                    
-                </div>
-                <hr>
-            </div>
+            <ul class="todoList shadow" id="listBox">   
+            </ul>
         </div>
         <div class="content">
             <img src="./assets/img/arrow3.png" alt="arrow" class="image">
